@@ -3,9 +3,9 @@
 ## Introduction
 This module provides Drupal sites the ability to search eBird data about local bird observations in your area!  
 
-What is [eBird](www.ebird.org)?  It is a conservation project spearheaded by Cornell University that lets citizens across the world submit bird observations to track population density and migration data.  eBird graciously allows people access to this data, which this module takes advantage of.
+What is [eBird](http://www.ebird.org)?  It is a conservation project spearheaded by Cornell University that lets citizens across the world submit bird observations to track population density and migration data.  eBird graciously allows people access to this data, which this module takes advantage of.
 
-I built it so that I could search local bird data for my Drupal website: [birdreston.com](www.birdreston.com).  You can see the module working at [www.birdreston.com/bird-search](www.birdreston.com/bird-search) . 
+I built it so that I could search local bird data for my Drupal website: [birdreston.com](http://www.birdreston.com).  You can see the module working at [www.birdreston.com/bird-search](http://www.birdreston.com/bird-search) . 
 
 The module provides a search page that lets visitors look for any kind of bird seen in the Reston area in the last 30 days.  Additionally, a block is available that you can place on the front page of your website that has a form on it.  Visitors can use this block to search for birds, which then passes it along to the search page.
 
