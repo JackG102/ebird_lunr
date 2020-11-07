@@ -19,4 +19,5 @@ Finally, this module uses a fast, JavaScript library called Lunr to search the e
 
 ## To Dos
 [ ] Provide options in the configuration menu that allows admins to change the birding hotspots searched by the module and how many results are returned.  Currently, it is hardcoded to certain birding hotspots in Reston.
+
 [ ] Remove the committed node_modules folder and provide installation instructions with NPM or use online CDN.
