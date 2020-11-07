@@ -1,0 +1,5 @@
+name: eBird Lunr
+description: Provides client-side search of eBird API using Lunr search
+type: module
+package: eBird
+core_version_requirement: ^8 || ^9

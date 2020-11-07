@@ -1,0 +1,15 @@
+ebird_lunr.settings:
+    path: '/admin/config/ebird_lunr/settings'
+    defaults:
+        _title: 'eBird Lunr Settings Form'
+        _form: '\Drupal\ebird_lunr\Form\EbirdLunrConfigurationForm'
+    requirements:
+        _permission: 'access content'
+
+ebird_lunr.search-page:
+    path: '/bird-search'
+    defaults:
+        _title: 'Search eBird Data'
+        _form: '\Drupal\ebird_lunr\Form\eBirdLunrSearch'
+    requirements:
+        _permission: 'access content'

@@ -1,0 +1,10 @@
+search:
+  version: 1.x
+  js:
+    node_modules/lunr/lunr.js: {}
+    js/ebird_search.js: {}
+    js/build_index.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
