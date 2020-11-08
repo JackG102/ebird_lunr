@@ -141,7 +141,7 @@ class eBirdLunrSearch extends FormBase {
       $response = $client->get('/v2/data/obs/US-VA-059/recent', [
         'query' => [
           'maxResults' => 1000,
-          'r' => 'L579773,L1539888,L3490968,L876992,L1355334,L2294314,L1100184,L1927385,L2438988,L2380916',
+          'r' => $config_module_values->get('hotspot_ids'),
           'back' => 30,
         ],
         'headers' => [

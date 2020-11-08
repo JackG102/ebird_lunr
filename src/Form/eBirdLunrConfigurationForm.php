@@ -48,6 +48,17 @@ class EbirdLunrConfigurationForm extends ConfigFormBase {
       '#markup' => "<span>If you do not have an eBird API key, you'll need to sign into your eBird account and sign up to receive one: <a href='https://ebird.org/api/keygen'>https://ebird.org/api/keygen</a></span>",
     ];
 
+    $form['hotspot_ids'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Birding Hotspot IDs'),
+      '#description' => $this->t("Enter in up to 10 birding hotspot IDs to be indexed for the search. Be sure to seperate each ID with a comma but leave no spaces between them.  For example: L579773,L1539888,L3490968'"),
+      '#default_value' => $config->get('hotspot_ids'),
+    ];
+
+    $form['hotspot_ids_help'] = [
+      '#markup' => "<span>If you do not know the ID of the birding hotspots you want to be searched, visit the hotspot page on ebird.org.  Every URL will end with the hotspot ID.  For example, 'https://ebird.org/hotspot/L579773', L579773 is the ID for the Glade Valley Stream.</span>",
+    ];
+
     return parent::buildForm($form, $form_state);
   }
 
@@ -58,6 +69,8 @@ class EbirdLunrConfigurationForm extends ConfigFormBase {
 
   $this->configFactory()->getEditable(static::SETTINGS)
     ->set('api_key', $form_state->getValue('api_key'))
+    ->set('hotspot_ids', $form_state->getValue('hotspot_ids'))
+
     ->save();
 
   return parent::submitForm($form, $form_state);
