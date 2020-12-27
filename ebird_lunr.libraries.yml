@@ -2,6 +2,7 @@ search:
   version: 1.x
   js:
     node_modules/lunr/lunr.js: {}
+    node_modules/gsap/dist/gsap.min.js: {}
     js/ebird_search.js: {}
     js/build_index.js: {}
   dependencies:
