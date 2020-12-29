@@ -83,10 +83,13 @@
           individual_array = [];
         });
 
-        // Render results on page
+        // Build table results
         bird_results_array.forEach(element => {
           $('#search_results').append("<tr><td>" + element[0] + "</td><td>" + element[1] + "</td><td>" + element[2] + "</td><td>" + element[3] + "</td></tr>");
         });
+
+        // Execute animation from search_animation.js file
+        Drupal.animation.search_animation();
       };
     }
   }
