@@ -2,8 +2,10 @@ search:
   version: 1.x
   js:
     node_modules/lunr/lunr.js: {}
-    js/ebird_search.js: {}
+    node_modules/gsap/dist/gsap.min.js: {}
     js/build_index.js: {}
+    js/ebird_search.js: {}
+    js/search_animation.js: {}
   dependencies:
     - core/drupal
     - core/jquery

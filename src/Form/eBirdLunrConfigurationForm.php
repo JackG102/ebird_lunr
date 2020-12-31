@@ -11,7 +11,7 @@ use Drupal\Core\Form\FormStateInterface;
  * Sub URL located at /admin/config/ebird_lunr/settings
  */
 
-class EbirdLunrConfigurationForm extends ConfigFormBase {
+class eBirdLunrConfigurationForm extends ConfigFormBase {
 
   const SETTINGS = 'ebird_lunr.settings';
 

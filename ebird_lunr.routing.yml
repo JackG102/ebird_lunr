@@ -2,7 +2,7 @@ ebird_lunr.settings:
     path: '/admin/config/ebird_lunr/settings'
     defaults:
         _title: 'eBird Lunr Settings Form'
-        _form: '\Drupal\ebird_lunr\Form\EbirdLunrConfigurationForm'
+        _form: '\Drupal\ebird_lunr\Form\eBirdLunrConfigurationForm'
     requirements:
         _permission: 'access content'
 
